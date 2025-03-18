@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perfil</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- JQUERY -->
+    <script src="lib/jQuery3.js"></script>
+
+    <!-- BOXICONS -->
+    <link rel="stylesheet" href="lib/boxicons.min.css" />
+
+    <!-- SWIPER BLUNDE -->
+    <script src="lib/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="lib/swiper-bundle.min.css" />
+
+    <!-- Sprectrun -->
+    <link rel="stylesheet" href="lib/spectrum.css" />
+    <script src="lib/spectrum.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+
+    <!-- ESTILOS PAGINA -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/x-icon" href="img/iconpage2.png" />
+
+  </head>
+  <body>
+    <div class="loading"  >
+      <div class="loading-container">
+        <div class="terminal">
+          <div class="terminal-header">
+            <div class="buttons">
+              <span class="button close"></span>
+              <span class="button minimize"></span>
+              <span class="button maximize"></span>
+            </div>
+            <div class="titleonload">root@hacker:~</div>
+          </div>
+          <div class="terminal-body">
+            <div class="commandline">
+              <div class="text">
+                <span>C:\Users\TinoKum\ProyectsNasa></span>
+                <span> date</span>
+              </div>
+              <div class="inputtext">
+                <span>C:\Users\TinoKum\ProyectsNasa></span>
+                <span id="horaactual"></span>
+              </div>
+            </div>
+
+            <p id="loading-text">Cargando sistema...</p>
+            <div class="progress-bar">
+              <div class="progress"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header>
+      <div class="logo">
+        <span style="color: var(--primary-color)">TinoDoc</span>s
+      </div>
+      <ul class="navlist" id="txtcrearMenu"></ul>
+      <div id="menu-icon" class="bx bx-menu"></div>
+    </header>
+    <!-- section -->
+    <section class="home sec" id="home">
+      <div class="home-content scroll-scale">
+        <h1 id="txth1"><span id="txtSaludo"></span></h1>
+
+        <div class="change-text">
+          <h3>Yo Soy</h3>
+          <h3 id="habilidadesInicio"></h3>
+        </div>
+        <p id="txtDescripcion"></p>
+        <div class="info box" title="Enviar Correo">
+          <div class="email-info">
+            <a href="#contact"><i class="bx bxs-envelope bx-tada"></i></a>
+          </div>
+          <div class="email-info" title="Ver Perfil">
+            <a
+              href="https://www.linkedin.com/in/engelberth-jos%C3%A9-valentin-macario-juarez-tino/"
+              target="_blank"
+              id="btnEnviarMensaje"
+              ><i class="bx bxl-linkedin-square bx-tada"></i
+            ></a>
+          </div>
+
+          <div class="behance-info" title="Ver Proyectos">
+            <a href="https://github.com/engelberth90" target="_blank">
+              <i class="bx bxl-github bx-tada"> </i
+            ></a>
+          </div>
+        </div>
+        <div class="btn-box">
+          <a
+            href="/js/curriLuis.pdf"
+            id="btncv"
+            download="CurriculumValentin.pdf"
+            class="btn"
+          ></a>
+          <button id="cambiar" value="0" class="btn">
+            <img class="containerImagenlogo" src="img/translate.png" />
+            Inglish
+          </button>
+        </div>
+      </div>
+
+      <div class="home-image scroll-scale">
+        <div class="img-box">
+          <img src="img/perfilFoto.png" alt="" />
+        </div>
+        <div class="liquid-shape">
+          <svg
+            viewBox="0 0 500 500"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="100%"
+            id="blobSvg"
+          >
+            <defs>
+              <pattern
+                id="pattern"
+                x="0"
+                y="0"
+                width="28"
+                height="49"
+                patternUnits="userSpaceOnUse"
+                fill="var(--primary-color)"
+              >
+                <path
+                  d="M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z"
+                ></path>
+              </pattern>
+            </defs>
+
+            <path fill="var(--primary-color)">
+              <animate
+                attributeName="d"
+                dur="10000ms"
+                repeatCount="indefinite"
+                values="M447.5,288Q483,326,451.5,350Q420,374,381.5,376Q343,378,333,426Q323,474,286.5,452.5Q250,431,226.5,412.5Q203,394,154.5,421Q106,448,94,410Q82,372,81,338.5Q80,305,48.5,277.5Q17,250,17.5,212.5Q18,175,66,163Q114,151,130,129Q146,107,172,99Q198,91,224,79Q250,67,279.5,67Q309,67,333,84.5Q357,102,397.5,108Q438,114,452.5,147Q467,180,439.5,215Q412,250,447.5,288Z;
+                M432.6823,281.25664Q443.24247,312.51327,429.9991,341.52654Q416.75574,370.53981,386.85751,384.02654Q356.95929,397.51327,330.52036,407.4531Q304.08142,417.39293,277.04071,436.12213Q250,454.85133,213.24336,465.26991Q176.48673,475.68849,144.74336,456.84424Q113,438,109.18938,396.60796Q105.37877,355.21593,103.44602,326.83097Q101.51327,298.44602,83.78318,274.22301Q66.05308,250,44.02036,213.11505Q21.98763,176.23009,69.21682,164.76372Q116.44602,153.29735,133.00619,132.51946Q149.56635,111.74157,164.1345,70.92477Q178.70265,30.10796,214.35133,58.24247Q250,86.37697,280.31062,75.40531Q310.62123,64.43365,339.18938,75.94602Q367.75753,87.45839,405.3646,98.62832Q442.97166,109.79824,432.6823,151.85841Q422.39293,193.91858,422.25753,221.95929Q422.12213,250,432.6823,281.25664Z;
+                M428,277Q416,304,398.5,324.5Q381,345,366,367Q351,389,333.5,421.5Q316,454,283,454Q250,454,217.5,452.5Q185,451,149,444.5Q113,438,116,391.5Q119,345,106,323Q93,301,62.5,275.5Q32,250,47,219.5Q62,189,90.5,172Q119,155,113,104Q107,53,142,39Q177,25,213.5,31Q250,37,273.5,72Q297,107,346,78.5Q395,50,396,96.5Q397,143,428,162.5Q459,182,449.5,216Q440,250,428,277Z;
+                M441,281.5Q445,313,424.5,337.5Q404,362,373,369.5Q342,377,329,415Q316,453,283,449.5Q250,446,224.5,426Q199,406,173,399Q147,392,124.5,375Q102,358,80,335Q58,312,71.5,281Q85,250,70,218.5Q55,187,75.5,162.5Q96,138,120,121.5Q144,105,173,104.5Q202,104,226,56.5Q250,9,286.5,17Q323,25,349.5,50.5Q376,76,375,118Q374,160,383.5,182Q393,204,415,227Q437,250,441,281.5Z;
+                M455,282.5Q450,315,420.5,334Q391,353,386.5,392Q382,431,349.5,443Q317,455,283.5,449Q250,443,218.5,443.5Q187,444,163,423Q139,402,124,377.5Q109,353,89.5,330.5Q70,308,75,279Q80,250,66.5,218Q53,186,73.5,161Q94,136,122,124Q150,112,165.5,75Q181,38,215.5,29.5Q250,21,275,59Q300,97,326,103Q352,109,384.5,118.5Q417,128,412,163.5Q407,199,433.5,224.5Q460,250,455,282.5Z;
+                M447.5,288Q483,326,451.5,350Q420,374,381.5,376Q343,378,333,426Q323,474,286.5,452.5Q250,431,226.5,412.5Q203,394,154.5,421Q106,448,94,410Q82,372,81,338.5Q80,305,48.5,277.5Q17,250,17.5,212.5Q18,175,66,163Q114,151,130,129Q146,107,172,99Q198,91,224,79Q250,67,279.5,67Q309,67,333,84.5Q357,102,397.5,108Q438,114,452.5,147Q467,180,439.5,215Q412,250,447.5,288Z;"
+              ></animate>
+            </path>
+          </svg>
+        </div>
+        <div class="liquid-shape">
+          <svg
+            viewBox="0 0 500 500"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="100%"
+            id="blobSvg"
+          >
+            <defs>
+              <pattern
+                id="pattern"
+                x="0"
+                y="0"
+                width="28"
+                height="49"
+                patternUnits="userSpaceOnUse"
+                fill="var(--primary-color)"
+              >
+                <path
+                  d="M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z"
+                ></path>
+              </pattern>
+            </defs>
+            <path fill="url(#pattern)">
+              <animate
+                attributeName="d"
+                dur="10000ms"
+                repeatCount="indefinite"
+                values="M447.5,288Q483,326,451.5,350Q420,374,381.5,376Q343,378,333,426Q323,474,286.5,452.5Q250,431,226.5,412.5Q203,394,154.5,421Q106,448,94,410Q82,372,81,338.5Q80,305,48.5,277.5Q17,250,17.5,212.5Q18,175,66,163Q114,151,130,129Q146,107,172,99Q198,91,224,79Q250,67,279.5,67Q309,67,333,84.5Q357,102,397.5,108Q438,114,452.5,147Q467,180,439.5,215Q412,250,447.5,288Z;
+                M432.6823,281.25664Q443.24247,312.51327,429.9991,341.52654Q416.75574,370.53981,386.85751,384.02654Q356.95929,397.51327,330.52036,407.4531Q304.08142,417.39293,277.04071,436.12213Q250,454.85133,213.24336,465.26991Q176.48673,475.68849,144.74336,456.84424Q113,438,109.18938,396.60796Q105.37877,355.21593,103.44602,326.83097Q101.51327,298.44602,83.78318,274.22301Q66.05308,250,44.02036,213.11505Q21.98763,176.23009,69.21682,164.76372Q116.44602,153.29735,133.00619,132.51946Q149.56635,111.74157,164.1345,70.92477Q178.70265,30.10796,214.35133,58.24247Q250,86.37697,280.31062,75.40531Q310.62123,64.43365,339.18938,75.94602Q367.75753,87.45839,405.3646,98.62832Q442.97166,109.79824,432.6823,151.85841Q422.39293,193.91858,422.25753,221.95929Q422.12213,250,432.6823,281.25664Z;
+                M428,277Q416,304,398.5,324.5Q381,345,366,367Q351,389,333.5,421.5Q316,454,283,454Q250,454,217.5,452.5Q185,451,149,444.5Q113,438,116,391.5Q119,345,106,323Q93,301,62.5,275.5Q32,250,47,219.5Q62,189,90.5,172Q119,155,113,104Q107,53,142,39Q177,25,213.5,31Q250,37,273.5,72Q297,107,346,78.5Q395,50,396,96.5Q397,143,428,162.5Q459,182,449.5,216Q440,250,428,277Z;
+                M441,281.5Q445,313,424.5,337.5Q404,362,373,369.5Q342,377,329,415Q316,453,283,449.5Q250,446,224.5,426Q199,406,173,399Q147,392,124.5,375Q102,358,80,335Q58,312,71.5,281Q85,250,70,218.5Q55,187,75.5,162.5Q96,138,120,121.5Q144,105,173,104.5Q202,104,226,56.5Q250,9,286.5,17Q323,25,349.5,50.5Q376,76,375,118Q374,160,383.5,182Q393,204,415,227Q437,250,441,281.5Z;
+                M455,282.5Q450,315,420.5,334Q391,353,386.5,392Q382,431,349.5,443Q317,455,283.5,449Q250,443,218.5,443.5Q187,444,163,423Q139,402,124,377.5Q109,353,89.5,330.5Q70,308,75,279Q80,250,66.5,218Q53,186,73.5,161Q94,136,122,124Q150,112,165.5,75Q181,38,215.5,29.5Q250,21,275,59Q300,97,326,103Q352,109,384.5,118.5Q417,128,412,163.5Q407,199,433.5,224.5Q460,250,455,282.5Z;
+                M447.5,288Q483,326,451.5,350Q420,374,381.5,376Q343,378,333,426Q323,474,286.5,452.5Q250,431,226.5,412.5Q203,394,154.5,421Q106,448,94,410Q82,372,81,338.5Q80,305,48.5,277.5Q17,250,17.5,212.5Q18,175,66,163Q114,151,130,129Q146,107,172,99Q198,91,224,79Q250,67,279.5,67Q309,67,333,84.5Q357,102,397.5,108Q438,114,452.5,147Q467,180,439.5,215Q412,250,447.5,288Z;"
+              ></animate>
+            </path>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- about section -->
+
+    <section class="about sec" id="about">
+      <div class="img-about scroll-scale">
+        <img src="img/perfilFoto1.png" alt="" />
+
+        <span style="--i:0;"></span>
+        <span style="--i:1;"></span>
+        <span style="--i:2;"></span>
+        <span style="--i:3;"></span>
+        <span style="--i:4;"></span>
+        <span style="--i:5;"></span>
+        <span style="--i:6;"></span>
+        <span style="--i:7;"></span>
+        <span style="--i:8;"></span>
+        <span style="--i:9;"></span>
+        <span style="--i:10;"></span>
+        <span style="--i:11;"></span>
+        <span style="--i:12;"></span>
+        <span style="--i:13;"></span>
+        <span style="--i:14;"></span>
+        <span style="--i:15;"></span>
+        <span style="--i:16;"></span>
+        <span style="--i:17;"></span>
+        <span style="--i:18;"></span>
+        <span style="--i:19;"></span>
+        <span style="--i:20;"></span>
+        <span style="--i:21;"></span>
+        <span style="--i:22;"></span>
+        <span style="--i:23;"></span>
+        <span style="--i:24;"></span>
+        <span style="--i:25;"></span>
+        <span style="--i:26;"></span>
+        <span style="--i:27;"></span>
+        <span style="--i:28;"></span>
+        <span style="--i:29;"></span>
+        <span style="--i:30;"></span>
+        <span style="--i:31;"></span>
+        <span style="--i:32;"></span>
+        <span style="--i:33;"></span>
+        <span style="--i:34;"></span>
+        <span style="--i:35;"></span>
+        <span style="--i:36;"></span>
+        <span style="--i:37;"></span>
+        <span style="--i:38;"></span>
+        <span style="--i:39;"></span>
+        <span style="--i:40;"></span>
+        <span style="--i:41;"></span>
+        <span style="--i:42;"></span>
+        <span style="--i:43;"></span>
+        <span style="--i:44;"></span>
+        <span style="--i:45;"></span>
+        <span style="--i:46;"></span>
+        <span style="--i:47;"></span>
+        <span style="--i:48;"></span>
+        <span style="--i:49;"></span>
+      
+      </div>
+
+      <div class="about-content">
+        <div class="main-text scroll-scale">
+          <span id="tituloSobre"> </span>
+          <h3 class="title"><span id="subtituloSobre"> </span></h3>
+        </div>
+        <p id="descripcionSobre"></p>
+      </div>
+    </section>
+
+    <!-- servives section -->
+
+    <section class="services sec" id="services">
+      <div class="main-text scroll-scale">
+        <span id="titulocert"></span>
+        <h2 class="title"><span id="subtitulocert"> </span></h2>
+      </div>
+      <div class="section-services scroll-bottom">
+        <div class="swiper card-slider">
+          <div id="Pintando1" class="swiper-wrapper"></div>
+
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <div class="main-text">
+        <h2 class="title"><span id="subtitulocursos"> </span></h2>
+      </div>
+      <div class="section-services scroll-bottom">
+        <div class="swiper card-slider">
+          <div id="Pintando2" class="swiper-wrapper"></div>
+
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="services sec" id="services">
+ 
+    </section> -->
+
+    <!-- SECTION SKILLSS -->
+
+    <section class="skills sec" id="skills">
+      <canvas id="systemsCanvas"></canvas>
+
+      <div class="main-text scroll-scale">
+        <span id="tituloskill"> </span>
+        <h2 class="title"><span id="subtituloskill"> </span></h2>
+      </div>
+
+      <div class="skill-main">
+        <div id="" class="skill-left scroll-scale">
+          <h3 id="tituloParteuno"></h3>
+          <div id="parteunohabilidades"></div>
+        </div>
+        <div class="skill-right scroll-scale">
+          <h3 id="titulopartedos"></h3>
+          <div class="professional" id="partedoshabilidades"></div>
+        </div>
+      </div>
+    </section>
+    <div class="window-modal">
+      <dialog id="dialogImage">
+        <div class="containerdialog">
+          <div class="cerrardialog"><i class="bx bxs-x-circle"></i></div>
+          <div class="boximage" id="boximage"></div>
+        </div>
+      </dialog>
+    </div>
+
+    <!-- section portafolios -->
+
+    <section class="portafolio sec" id="portafolio">
+      <div class="main-text scroll-scale">
+        <span id="titulojobs"></span>
+        <h2 class="title"><span id="subtitulojobs"></span></h2>
+      </div>
+
+      <div class="container">
+        <div id="verJobs" class="portafolio-gallery scroll-bottom"></div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+
+    <section class="contact sec" id="contact">
+      <div id="matrix" class="matrix"></div>
+
+      <div class="main-text scroll-scale">
+        <span id="titulocontacto"> </span>
+        <h2 class="title"><span id="subtitulocontacto"> </span></h2>
+      </div>
+      <form action="#" class="scroll-bottom">
+        <div class="inputgroup">
+          <label id="nombrePersonalabel"> </label>
+
+          <input
+            type="text"
+            placeholder="Nombre"
+            name="nombrePersona"
+            id="nombrePersona"
+            required
+          />
+        </div>
+        <div class="inputgroup">
+          <label id="labelCorreo"> </label>
+          <input
+            type="text"
+            placeholder="Correo electronico"
+            name="correoPersona"
+            id="correoPersona"
+            required
+          />
+        </div>
+        <div class="inputgroup">
+          <label id="labelMensaje"> </label>
+          <textarea
+            name="mensajePersona"
+            id="mensajePersona"
+            cols="30"
+            rows="10"
+            placeholder="Comentario"
+            required
+          ></textarea>
+        </div>
+
+        <div class="btn-box formBtn">
+          <button type="button" class="btn" id="btnEnviarcorreo">
+            Enviar mensaje
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <!-- footer -->
+    <footer class="sec">
+      <p>Derechos reservados LuisFer &copy;2025</p>
+      <a class="scroll-scale" href="#home"
+        ><i class="bx bx-up-arrow-alt"></i
+      ></a>
+    </footer>
+
+    <script src="js/creaciontags.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/animacionCanvas.js"></script>
+
+    <!-- <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script> -->
+  </body>
+</html>

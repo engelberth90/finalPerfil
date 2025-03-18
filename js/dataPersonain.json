@@ -1,0 +1,217 @@
+{
+  "perfilPersona": [
+    {
+      "nombre": "I am Valentin",
+      "descripcion": "I am passionate about offensive security, specializing in penetration testing for web applications, APIs, and mobile devices, as well as infrastructure assessment. I tackle cybersecurity challenges by identifying vulnerabilities before they can be exploited. My goal is to help organizations strengthen their security by identifying risks and proposing effective solutions.",
+      "tituloBoton": "Download CV",
+      "linkcv": "/js/cvinglish.pdf"
+    }
+  ],
+
+  "habilidadesinicio": [
+    {
+      "titulo": "Network Analyst"
+    },
+    {
+      "titulo": "Programmer"
+    },
+    {
+      "titulo": "Pentester"
+    },
+    {
+      "titulo": "Wireless Hacking"
+    }
+  ],
+
+  "saludo": [
+    {
+      "nombre": "Good Morning!"
+    },
+    {
+      "nombre": "Good Afternoon!"
+    },
+    {
+      "nombre": "Good Evening!"
+    }
+  ],
+
+  "sobreMi": [
+    {
+      "titulo": "About Me",
+      "subtitulo": "Academic Level",
+      "parrafo1": "Since the beginning of my academic journey, I have been committed to excellence and continuous learning, which has allowed me to build a solid educational foundation. Throughout my training, I have excelled in obtaining outstanding grades that reflect my dedication and commitment to knowledge. Currently, I am pursuing a degree in Systems Engineering and Computer Science, where I have had the opportunity to delve into various areas of technology and computing, with a special focus on cybersecurity.",
+      "parrafo2": "In my ninth semester, I feel excited about the knowledge I have acquired and the practical experiences I have had, which have prepared me to face the challenges of the job market. I am determined to apply my skills in cybersecurity and continue to grow professionally in this exciting and dynamic industry."
+    }
+  ],
+  "menu": [
+    {
+      "nombre": "<li> <a href=\"#home\"> <i class=\"bx bxs-home-heart\"></i> Start</a></li>"
+    },
+    {
+      "nombre": "<li><a href=\"#about\"><i class=\"bx bx-male\"></i> About me</a></li>"
+    },
+    {
+      "nombre": "<li><a href=\"#services\"><i class=\"bx bxs-collection\"></i> Certifications</a>"
+    },
+    {
+      "nombre": "<li><a href=\"#skills\"><i class=\"bx bx-sort-up\"></i> Competencies</a></li>"
+    },
+    {
+      "nombre": "<li><a href=\"#portafolio\"><i class=\"bx bxs-book-bookmark\"></i> Portfolio</a></li>"
+    },
+    {
+      "nombre": "<li><a href=\"#contact\"><i class=\"bx bxs-contact\"></i> Contact me</a></li>"
+    }
+  ],
+
+  "certificaciones": [
+    {
+      "titulo": "More about me",
+      "subtitulo": "Certifications ",
+      "cursostitulo": "Cursos",
+      "certificaciones": [
+        {
+          "id": 1,
+          "nombre": "Professsional Ethical Hacker",
+          "ruta": "certificaciones/cert1.jpg",
+          "fecha": "27/07/2024"
+        },
+        {
+          "id": 2,
+          "nombre": "Penetration Testing Engineer",
+          "ruta": "certificaciones/cert2.jpg",
+          "fecha": "16/12/2024"
+        },
+        {
+          "id": 3,
+          "nombre": "Web Application Penetration Tester Extreme",
+          "ruta": "certificaciones/cert3.jpg",
+          "fecha": "02/04/2024"
+        },
+        {
+          "id": 4,
+          "nombre": "Practical Network Penetration Tester",
+          "ruta": "certificaciones/cert4.jpg",
+          "fecha": "11/01/2025"
+        }
+      ],
+      "cursos": [
+        {
+          "id": 1,
+          "nombre": "API Penetration Testing",
+          "ruta": "cursos/curso1.jpg",
+          "fecha": "07/07/2023"
+        },
+        {
+          "id": 2,
+          "nombre": "Linux Previlege Escalation for Beginners",
+          "ruta": "cursos/curso2.jpg",
+          "fecha": "13/01/2023"
+        },
+        {
+          "id": 3,
+          "nombre": "Mobile Application Penetration Testing",
+          "ruta": "cursos/curso3.jpg",
+          "fecha": "11/06/2023"
+        },
+        {
+          "id": 4,
+          "nombre": "Windows Previlege Escalation for Beginners",
+          "ruta": "cursos/curso4.jpg",
+          "fecha": "16/02/2023"
+        },
+        {
+          "id": 5,
+          "nombre": "Practical Hethical Hacking",
+          "ruta": "cursos/curso5.jpg",
+          "fecha": "10/01/2023"
+        }
+      ]
+    }
+  ],
+  "Habilidades": [
+    {
+      "titulo": "Hacker Skills",
+      "subtitulo": "My skills are",
+      "tituloParte1": "Skills",
+      "tituloParte2": "Competencies",
+      "habilidades": [
+        {
+          "id": 1,
+          "nombre": "Movil Pentesting",
+          "porcentaje": 85
+        },
+        {
+          "id": 2,
+          "nombre": "programmer",
+          "porcentaje": 20
+        },
+        {
+          "id": 3,
+          "nombre": "Web Pentesting",
+          "porcentaje": 80
+        },
+        {
+          "id": 4,
+          "nombre": "API Pentesting",
+          "porcentaje": 75
+        },
+        {
+          "id": 4,
+          "nombre": "Pentesting infrastructure",
+          "porcentaje": 75
+        }
+      ],
+      "Competencias": [
+        {
+          "nombre": "Native Spanish",
+          "porcentaje": 100
+        },
+        {
+          "nombre": "Inglish",
+          "porcentaje": 30
+        },
+        {
+          "nombre": "Self-taught",
+          "porcentaje": 50
+        },
+        {
+          "nombre": "Creative",
+          "porcentaje": 80
+        }
+      ]
+    }
+  ],
+  "Trabajo": [
+    {
+      "titulo": "About My Work",
+      "subtitulo": "Work Experience",
+      "Proyectos": [
+        {
+          "id": 1,
+          "nombre": "Static Analysis, Android",
+          "fecha": "17/11/2023",
+          "pathImagen": "imagenJobs/jobs1.jpg",
+
+          "link": "https://engelberth90.github.io/Analisis-Estatido-Android/#"
+        },
+        {
+          "id": 1,
+          "nombre": "Mobile Audit Setup",
+          "fecha": "03/11/2023",
+          "pathImagen": "imagenJobs/jobs2.jpg",
+          "link": "https://engelberth90.github.io/Configuraci%C3%B3n-para-auditorias-mobiles/"
+        }
+      ]
+    }
+  ],
+  "Contacto": [
+    {
+      "titulo": "Contact Me",
+      "subtitulo": "Send Email",
+      "tag1": "Names",
+      "tag2": "Email",
+      "tag3": "Message"
+    }
+  ]
+}

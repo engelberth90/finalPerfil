@@ -13,7 +13,7 @@
       "titulo": "Network Analyst"
     },
     {
-      "titulo": "Programmer"
+      "titulo": "Scripting"
     },
     {
       "titulo": "Pentester"
@@ -139,27 +139,27 @@
         {
           "id": 1,
           "nombre": "Movil Pentesting",
-          "porcentaje": 85
+          "porcentaje": "Conducting penetration testing on native and hybrid mobile applications for Android and iOS, covering black-box and gray-box approaches. Analyzing and manipulating application logic to identify vulnerabilities in functionality and business logic."
         },
         {
           "id": 2,
           "nombre": "programmer",
-          "porcentaje": 20
+          "porcentaje": "Implementing Bash and Python scripting during penetration testing to automate attacks and optimize complex configurations, streamlining tasks that would normally take an hour to complete, reducing their execution to just five minutes, thereby improving the efficiency and accuracy of the process."
         },
         {
           "id": 3,
           "nombre": "Web Pentesting",
-          "porcentaje": 80
+          "porcentaje": "Conducting penetration testing on web applications, from black-box to gray-box approaches, with the goal of compromising business logic and evading implemented security measures. We seek to identify the largest number of vulnerabilities before they can be exploited by cybercriminals."
         },
         {
           "id": 4,
           "nombre": "API Pentesting",
-          "porcentaje": 75
+          "porcentaje": "API penetration testing, from black-box to gray-box approaches, focuses on identifying vulnerabilities in business logic, access control, and exposure of sensitive data. Security flaws are analyzed and exploited to mitigate risks before they are exploited by malicious actors."
         },
         {
           "id": 4,
           "nombre": "Pentesting infrastructure",
-          "porcentaje": 75
+          "porcentaje": "Conducting external penetration tests with the goal of compromising the organization's perimeter infrastructure and gaining unauthorized access to its assets. Conducting internal penetration tests, focused on identifying as many vulnerabilities as possible within the internal infrastructure and compromising Active Directory through targeted attacks on the domain and its configurations."
         }
       ],
       "Competencias": [
@@ -185,7 +185,7 @@
   "Trabajo": [
     {
       "titulo": "About My Work",
-      "subtitulo": "Work Experience",
+      "subtitulo": "Proyects",
       "Proyectos": [
         {
           "id": 1,

@@ -12,7 +12,7 @@ let txtcrearMenu = document.querySelector("#txtcrearMenu");
 
 
 const cambiar = document.querySelector("#cambiar");
-let colorChange = "#20dd4c";
+let colorChange = "#7f1d1d";
 
 //CURSOS   Y    CERTIFICACIONES
 const titulocert = document.querySelector("#titulocert");
@@ -176,13 +176,7 @@ async function crearMenu(menu) {
             </div> 
           </div>
         </li>
-        <li>
-          <div class="btnchangeColor">
-            <a id="btnColor" href="#" class="btn"
-              ><i class="bx bxs-palette bx-spin"></i
-            ></a>
-          </div>
-        </li>`;
+         `;
     menu.forEach((element) => {
         cadena += element.nombre;
     });
@@ -191,7 +185,7 @@ async function crearMenu(menu) {
     txtcrearMenu.insertAdjacentHTML('afterbegin', cadena);
     temaPagina();
     ActivarOpcionMenu();
-    paletaColores()
+    
 }
 
 async function mostrarDescripcion(modulouno) {
@@ -245,39 +239,6 @@ function ActivarOpcionMenu() {
 
     window.addEventListener("scroll", activeMenu);
 }
-
-function paletaColores() {
-    // spectrum patronus
-    $("#btnColor").spectrum({
-        color: "#f00",
-        showPalette: false,
-        showAlpha: true,
-        showButtons: false,
-    });
-
-    var styleElement = document.createElement("style");
-    styleElement.rel = "stylesheet";
-    styleElement.href = "css/elementos.css";
-    document.head.appendChild(styleElement);
-
-    $("#btnColor").on("dragstop.spectrum", function (e, color) {
-
-        styleElement.textContent = `
-    :root {
-  --primary-color: ${color.toHexString()} !important;
-}`;
-
-        colorChange = color.toHexString();
-    });
-
-}
-
-// function renderizarData() {
-//     cargarData();
-
-// }
-
-// renderizarData();
 
 async function SaludoUsuario(saludar, nombre) {
     let hora = obtenerHoraActual();
@@ -467,9 +428,8 @@ async function ModuloHabilidades(modulo) {
     tituloskill.innerHTML = modulo[0].titulo;
     subtituloskill.innerHTML = modulo[0].subtitulo;
     tituloParteuno.innerHTML = modulo[0].tituloParte1;
-    titulopartedos.innerHTML = modulo[0].tituloParte2;
     mostrarHabilidades(modulo[0].habilidades);
-    mostrarCompetencias(modulo[0].Competencias);
+    // mostrarCompetencias(modulo[0].Competencias);
 
 }
 
@@ -479,10 +439,10 @@ function mostrarHabilidades(hab) {
         cadena += ` <div class="skill-bar">
               <div class="info">
                 <p>${element.nombre}</p>
-                <p>${element.porcentaje}%</p>
+                
               </div>
-              <div class="bar">
-                <span class="hab${element.id}"></span>
+              <div class="descripcion">
+                <p>${element.porcentaje}</p>
               </div>
             </div>`;
     });
@@ -618,7 +578,7 @@ async function ModuloContacto(modulo) {
 
 if (btnEnviarcorreo) {
     btnEnviarcorreo.addEventListener("click", (e) => {
-        emailjs.init("iM_jA3VFtlpSZW9wq"); // Reemplaza con tu user_id
+        emailjs.init("Kwb-SAn9qrNsn5X9I"); // Reemplaza con tu user_id
         // enviarCorreo(nombrePersona, correoPersona, mensajePersona);
         let retorno1 = validateCamposVacios(nombrePersona, labelNombre, "Nombres")
         let retorno2 = validarGmail();
@@ -681,7 +641,8 @@ function enviarCorreo(nombre, email, mensaje) {
         mensajePersona: mensaje
     };
 
-    emailjs.send('service_r6cul01', 'template_7ipfi4q', templateParams)
+    // emailjs.send('service_r6cul01', 'template_7ipfi4q', templateParams)
+    emailjs.send('service_7mf13wm', 'template_hqx5ril', templateParams)
         .then((response) => {
             console.log('Correo enviado con éxito!', response.status, response.text);
             alertaCorreo("Correo", "Correo enviado correctamente!!", "success");

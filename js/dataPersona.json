@@ -13,7 +13,7 @@
       "titulo": "Analista de redes"
     },
     {
-      "titulo": "Programador"
+      "titulo": "Scripting"
     },
 
     {
@@ -139,27 +139,27 @@
         {
           "id": 1,
           "nombre": "Movil Pentesting",
-          "porcentaje": 85
+          "porcentaje": "Realización de pruebas de penetración en aplicaciones móviles nativas e híbridas para Android e iOS, abarcando enfoques de caja negra y caja gris. Análisis y manipulación de la lógica de la aplicación para identificar vulnerabilidades en sus funcionalidades y en la lógica de negocio."
         },
         {
           "id": 2,
-          "nombre": "Programador",
-          "porcentaje": 20
+          "nombre": "Scripting",
+          "porcentaje": "Implementación de scripting en Bash y Python durante las pruebas de penetración para la automatización de ataques y la optimización de configuraciones complejas, agilizando tareas que normalmente requerirían una hora, reduciendo su ejecución a solo cinco minutos, mejorando así la eficiencia y precisión del proceso."
         },
         {
           "id": 3,
           "nombre": "Web Pentesting",
-          "porcentaje": 80
+          "porcentaje": "Realización de pruebas de penetración en aplicaciones web, desde enfoques de caja negra hasta caja gris, con el objetivo de comprometer la lógica de negocio y evadir las medidas de seguridad implementadas. Buscando identificar la mayor cantidad de vulnerabilidades antes de que puedan ser explotadas por ciberdelincuentes."
         },
         {
           "id": 4,
           "nombre": "API Pentesting",
-          "porcentaje": 75
+          "porcentaje": "Pruebas de penetración en APIs, desde enfoques de caja negra hasta caja gris, enfocadas en identificar vulnerabilidades en la lógica de negocio, control de acceso y exposición de datos sensibles. Se analizan y explotan fallos de seguridad para mitigar riesgos antes de que sean aprovechados por actores malintencionados."
         },
         {
           "id": 4,
           "nombre": "Infraestructura Pentesting",
-          "porcentaje": 75
+          "porcentaje": "Ejecución de pruebas de penetración externas con el objetivo de comprometer la infraestructura perimetral de la organización y obtener acceso no autorizado a sus activos. Ejecución de pruebas de penetración internas, enfocadas en identificar la mayor cantidad de vulnerabilidades dentro de la infraestructura interna y comprometer el Directorio Activo mediante ataques dirigidos al dominio y sus configuraciones."
         }
       ],
       "Competencias": [
@@ -185,18 +185,17 @@
   "Trabajo": [
     {
       "titulo": "Sobre Mi Trabajo",
-      "subtitulo": "Experiencia Laboral",
+      "subtitulo": "Proyectos",
       "Proyectos": [
         {
           "id": 1,
           "nombre": "Analisis Estatico, Android",
           "fecha": "17/11/2023",
           "pathImagen": "imagenJobs/jobs1.jpg",
-
           "link": "https://engelberth90.github.io/Analisis-Estatido-Android/#"
         },
         {
-          "id": 1,
+          "id": 2,
           "nombre": "Configuracion para Auditorias Moviles",
           "fecha": "03/11/2023",
           "pathImagen": "imagenJobs/jobs2.jpg",

@@ -8,14 +8,14 @@ partiqleCanvas.height = window.innerHeight;
 
 // Definir las propiedades de la animación
 let particleCount = 0;
-let particleSize = 2;
+let particleSize = 2.2;
 let particleSpeed = 2;
 let particleColor = colorChange;
 
 if (window.innerWidth < 600) {
     particleCount = 18;
 } else {
-    particleCount = 50;
+    particleCount = 54;
 }
 
 

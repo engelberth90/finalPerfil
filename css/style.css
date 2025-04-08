@@ -869,17 +869,14 @@ section {
 .animacioncard::after {
   content: "";
   position: absolute;
-  /* left: -8px;
-  top: -8px; */
+ 
   background: linear-gradient(
     40deg,
     #000000,
     var(--primary-color),
     #000000,
-    #000000,
     #ffffff,
     #000000,
-    var(--primary-color),
     var(--primary-color),
     #000000,
     #ffffff,
@@ -891,7 +888,7 @@ section {
   width: calc(100% + 12px);
   height: calc(100% + 12px);
   z-index: -1 !important;
-  animation: BGgradient 20s ease infinite;
+  animation: BGgradient 22s ease-in infinite;
   border-radius: 10px;
 }
 

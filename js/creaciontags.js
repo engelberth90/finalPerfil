@@ -21,6 +21,8 @@ const subtitulocursos = document.querySelector("#subtitulocursos");
 
 let idiomaglobal = "0";
 
+const textsoy = document.querySelector("#textsoy");
+
 
 
 //componentes extras
@@ -50,18 +52,19 @@ async function cargarData() {
 }
 
 
- function cambiarIdioma() {
+function cambiarIdioma() {
     cargarData();
+
     cambiar.addEventListener("click", (e) => {
         cambiar.value = cambiar.value == "0" ? "1" : "0";
         idiomaglobal = idiomaglobal == "0" ? "1" : "0";
         cambiar.innerHTML = cambiar.value == "0" ? `<img
               class="containerImagenlogo"
-              src="img/translate.png"
+              src="img/translate.webp"
             />
             Inglish` : `<img
               class="containerImagenlogo"
-              src="img/translate.png"
+              src="img/translate.webp"
             />
             Español`;
         cargarData();
@@ -72,6 +75,7 @@ async function cargarData() {
 function cambiarComponentesboton() {
     const btnTargetcambiar = document.querySelectorAll("#btnTarget1");
     const btnTargetcambia2 = document.querySelectorAll("#btnTarget2");
+    textsoy.innerHTML = idiomaglobal === "0" ? "Yo Soy" : "I am";
 
     btnTargetcambiar.forEach((element) => {
         element.innerHTML = idiomaglobal === "0" ? "Ver" : "Watch";
@@ -185,7 +189,7 @@ async function crearMenu(menu) {
     txtcrearMenu.insertAdjacentHTML('afterbegin', cadena);
     temaPagina();
     ActivarOpcionMenu();
-    
+
 }
 
 async function mostrarDescripcion(modulouno) {
@@ -257,7 +261,7 @@ async function SaludoUsuario(saludar, nombre) {
     txth1.innerHTML = `<span id="txtSaludo">${cadena}</span> ${nombre}`;
 }
 
-async function   sobreMi(titulo, subtitulo, parrafo1, parrafo2) {
+async function sobreMi(titulo, subtitulo, parrafo1, parrafo2) {
     tituloSobre.innerHTML = titulo;
     subtituloSobre.innerHTML = subtitulo;
     descripcionSobre.innerHTML = `${parrafo1} <br><br> ${parrafo2}`;
@@ -266,7 +270,7 @@ async function   sobreMi(titulo, subtitulo, parrafo1, parrafo2) {
 
 /// SECCION 3  ---CERTIFICACIONES
 
-async function  ModuloCertificaciones(modulo) {
+async function ModuloCertificaciones(modulo) {
     titulocert.innerHTML = modulo[0].titulo;
     subtitulocert.innerHTML = modulo[0].subtitulo;
     subtitulocursos.innerHTML = modulo[0].cursostitulo;
@@ -346,7 +350,7 @@ function swiperCargando() {
         pagination: true,
         centeredSlides: false,
         autoplay: {
-            delay: 4000,
+            delay: 8000,
             disableOnInteraction: false,
         },
         pagination: {
@@ -365,16 +369,16 @@ function swiperCargando() {
                 slidesPerView: 1,
             },
             480: {
-                slidesPerView: 1, // 2 slides en pantallas pequeñas
+                slidesPerView: 1,  
             },
             768: {
-                slidesPerView: 2, // 3 slides en tabletas
+                slidesPerView: 2,  
             },
             1024: {
-                slidesPerView: 3, // 4 slides en pantallas grandes
+                slidesPerView: 3,  
             },
             1200: {
-                slidesPerView: 3, // 5 slides en pantallas extra grandes
+                slidesPerView: 3,  
             },
         },
 
@@ -418,16 +422,13 @@ document.querySelector(".cerrardialog").addEventListener("click", (e) => {
 const tituloskill = document.querySelector("#tituloskill");
 const subtituloskill = document.querySelector("#subtituloskill");
 const tituloParteuno = document.querySelector("#tituloParteuno");
-const titulopartedos = document.querySelector("#titulopartedos");
 const parteunohabilidades = document.querySelector("#parteunohabilidades");
-const partedoshabilidades = document.querySelector("#partedoshabilidades");
 
 
 async function ModuloHabilidades(modulo) {
 
     tituloskill.innerHTML = modulo[0].titulo;
     subtituloskill.innerHTML = modulo[0].subtitulo;
-    tituloParteuno.innerHTML = modulo[0].tituloParte1;
     mostrarHabilidades(modulo[0].habilidades);
     // mostrarCompetencias(modulo[0].Competencias);
 
@@ -463,7 +464,6 @@ function mostrarCompetencias(comp) {
             </div>`;
     });
 
-    partedoshabilidades.innerHTML = cadena;
 
     animacionCompetencia();
 
